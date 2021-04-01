@@ -1,0 +1,19 @@
+- controlando template html com o vueJS
+- padrão doublemustard {{}} -> retornado como string
+- diretiva html (v-on:input)
+- funções construtoras
+- vueJS intermediário entre o template (aquilo escrito no editor de texto) e aquilo que sera jogado no browser para ser redenrizado
+uma ponte entre aquilo que você escreveu no trecho de html constrolado pela instância do vuejs para aquilo que sera redenrizado
+- vuejs guarda o template em memória, consegue alterar o html de forma cirurgica qd necessário
+- vuejs cria acessos diretos quando trabalha no template
+- proxy
+- instância Vuejs so pode ser acessada com this e n podem possui o mesmo nome, por exemplo um dado e uma função
+- referência do link na instância do vueJS
+- diretivas (propriedades personalizadas) são interpretadas pelo vuejs
+- v-once(fixa para atualização), v-bind
+- sempre que há mudança no valor de intância a vueJS é automaticamente atualizada
+- interpolação
+- two-way-binding (v-model)
+- propriedades computadas
+
+- função anônima, arrow function, setTimeout
