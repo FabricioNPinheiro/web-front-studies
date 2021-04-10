@@ -2,8 +2,14 @@ new Vue({
 	el: '#desafio',
 	data: {
 		classOne: 'destaque',
-		perigoProp: true,
-		alterClass: ''
+		perigo: true,
+		Class3: '',
+		Class4: '',
+		cor5: '',
+		estilo5: {
+			width: '100px',
+			height: '100px',
+		}
 	},
 	methods: {
 		iniciarEfeito() {
@@ -13,6 +19,13 @@ new Vue({
 		},
 		iniciarProgresso() {
 
+		},
+		setPerigo(event) {
+			if(event.target.value == "true") {
+				this.perigo = true
+			} else if(event.target.value == "false"){
+				this.perigo = false
+			  }
 		}
 	}
 })

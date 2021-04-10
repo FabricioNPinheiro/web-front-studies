@@ -5,7 +5,7 @@
 }
 
 .destaque {
-	background-color: red;
+	background-color: palevioletred;
 	width: 200px !important;
 }
 
@@ -14,8 +14,8 @@
 	width: 50px !important;
 }
 
-.perigoClass {
-	background-color: blue;
+.perigo {
+	background-color: red;
 }
 
 .quadrado {
@@ -23,12 +23,27 @@
 	height: 100px;
 }
 
+.direita {
+	float: right;
+}
+
+.barra-progresso {
+	height: 30px;
+	width: 500px;
+	border: 1px solid #000;
+}
+
+.progresso {
+	background-color: orange;
+	height: 100%;
+}
+
 .c1 {
 	background-color:black;
 }
 
 .c2 {
-	background-color:brown;
+	background-color: purple;
 }
 
 .c3 {
@@ -39,6 +54,3 @@
 	background-color: aquamarine;
 }
 
-.direita {
-	float: right;
-}
