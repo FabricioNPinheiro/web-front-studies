@@ -5,10 +5,10 @@ new Vue({
     },
     methods: {
         exibirAlerta() {
-            alert('Estou alertando')
+            alert('Exibindo alerta')
         },
         pressKey(event) {
-            this.valor = event.target.value;
+            this.valor = event.target.value
         }
     }
 })

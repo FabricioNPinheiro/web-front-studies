@@ -1,0 +1,33 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
+
+<div id="app">
+  <form @submit="UserSubmit">
+    <input type="text" v-model="name" placeholder="name" />
+    <button>Adicionar</button>
+  </form>
+  <ul v-for="item in todos" :key="item.id">
+    <li>{{item.name}}</li>
+  </ul>
+</div>
+
+<script>
+var vm = new Vue({
+  el: '#app',
+  data: {
+    todos: [{ 'id': 0,'name': 'default'
+    }],
+    name: ''
+  },
+  methods: {
+    UserSubmit: function(e) {
+      e.preventDefault();
+      if (this.name.trim().length) {
+        const obj = { 'id': this.todos.length + 1, 'name': this.name }
+        this.todos.push(obj);
+        this.name = '';
+      }
+    }
+  }
+})
+</script>
+

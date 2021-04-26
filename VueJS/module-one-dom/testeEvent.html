@@ -1,0 +1,35 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+<div id="app">
+    <p> {{contador}} </p>
+    <button v-on:click="somar"> Somar </button>
+    <button v-on:click="somarFor(4, $event)"> Somar4 </button>
+    <p v-on:mousemove="atualizaXY">Mouse: {{x}} e {{y}} 
+        <span v-on:mousemove.stop="">PARAR AQUII!!!</span>    
+    </p>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            contador: 0,
+            x: 0,
+            y: 0
+        }, 
+        methods: {
+            somar() {
+                this.contador++;
+            },
+            atualizaXY(event) {
+                console.log(event)
+                this.x = event.clientY;
+                this.y = event.clientX;
+            },
+            somarFor(passo, e) {
+                console.log(passo, e)
+                this.contador += passo;
+            }
+        }
+    })
+</script>

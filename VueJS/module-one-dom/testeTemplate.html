@@ -1,0 +1,36 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+<div id="app">
+    <p v-once>{{titulo}}</p>
+    <p>{{saudacao()}}</p>
+    <p>{{alterTitle()}}</p>
+    <a v-bind:href="link">Google</a>
+    <hr>
+    <a v-bind:href="linkHtml">{{linkHtml}}</a>
+    <hr>
+    <p> {{tempTitle()}}</p>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            titulo: "Ola man",
+            tituloTwo: "Boa Noite",
+            link: "http://google.com.br",
+            linkHtml: '<a href="http://google.com.br">Google</a>'
+        },
+        methods: {
+            saudacao() {
+                return this.titulo
+            },
+            alterTitle() {
+                this.titulo = "Alterando titulo"
+            },
+            tempTitle() {
+                this.titulo2 = "Bom diia";
+                return this.titulo2;
+            }
+        }
+    })
+</script>

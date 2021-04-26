@@ -10,8 +10,8 @@
         data (dica: event.target.value) -->
     <div>
     <!-- <input type="text" v-on:keyup="valor = $event.target.value"> -->
-        <input type="text" v-on:keyup="pressKey">
-        <p>{{ valor }}</p>
+        <input type="text" v-on:keyup="valor = $event.target.value">
+        <p> {{ valor }} </p>
     </div>
     
     <!-- 3) Ajuste o exemplo 2 para disparar o evento "keydown" somente
